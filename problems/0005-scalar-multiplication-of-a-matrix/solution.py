@@ -3,7 +3,4 @@ def scalar_multiply(matrix: list[list[int|float]], scalar: int|float) -> list[li
     if not matrix:
         return False
     
-    rows = len(matrix)
-
-    for r in range(rows):
-        return [[element * scalar for element in rows] for rows in matrix]
+    return [[element * scalar for element in row] for row in matrix]
